@@ -1,0 +1,124 @@
+@font-face {
+    font-family: 'twayair';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_tway@1.0/twayair.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{ width:100%; font-family: 'twayair'}
+
+#wrap {max-width: 1200px; margin:0 auto; padding:20px 10px; position:relative; background-color: #fff; }
+
+#top_wrap {background:#fff; padding: 10px 20px; border-radius:5px; text-align: center; display:flex; margin-bottom: 40px;}
+
+#left_dv {
+    width: 50%;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: left;
+    background: #fff;
+    margin-right: 10px;
+    
+}
+
+#right_dv { width:500px; background: black; width:50%; color:#fff;  padding: 15px;border-radius: 5px; text-align: right;}
+#right_dv > h3 {text-align: left;}
+
+#issue_wrap {background-color: #eee; padding:10px; border-radius:5px;}
+
+.btns{ display: inline-block; width:auto;}
+
+#table_wrap{padding:5px;}
+
+.fa-times {color:red}
+.fa-check {color:#2DB400}
+
+
+.neonText {
+color: #fff;
+text-shadow:
+/* White glow */
+0 0 7px #fff,
+0 0 10px #fff,
+0 0 21px #fff,
+/* Green glow */
+0 0 42px #0fa,
+0 0 82px #0fa,
+0 0 92px #0fa,
+0 0 102px #0fa,
+0 0 151px #0fa;
+}
+
+
+.neon {
+    font-family: neon;
+    color: #FB4264;
+    font-size: 20px;
+    line-height: 20px;
+    text-shadow: 0 0 20px #F40A35;
+}
+
+.flux {
+    font-family: neon;
+    color: #426DFB;
+    font-size: 20px;
+    line-height: 20px;
+    text-shadow: 0 0 20px #2356FF;
+}
+
+.neon {
+    animation: neon 1s ease infinite;
+    -moz-animation: neon 1s ease infinite;
+    -webkit-animation: neon 1s ease infinite;
+}
+
+@keyframes neon {
+
+    0%,
+    100% {
+        text-shadow: 0 0 1vw #FA1C16, 0 0 3vw #FA1C16, 0 0 10vw #FA1C16, 0 0 10vw #FA1C16, 0 0 .4vw #FED128, .5vw .5vw .1vw #806914;
+        color: #FED128;
+    }
+
+    50% {
+        text-shadow: 0 0 .5vw #800E0B, 0 0 1.5vw #800E0B, 0 0 5vw #800E0B, 0 0 5vw #800E0B, 0 0 .2vw #800E0B, .5vw .5vw .1vw #40340A;
+        color: #806914;
+    }
+}
+
+.flux {
+    animation: flux 2s linear infinite;
+    -moz-animation: flux 2s linear infinite;
+    -webkit-animation: flux 2s linear infinite;
+    -o-animation: flux 2s linear infinite;
+}
+
+@keyframes flux {
+
+    0%,
+    100% {
+        text-shadow: 0 0 1vw #1041FF, 0 0 3vw #1041FF, 0 0 10vw #1041FF, 0 0 10vw #1041FF, 0 0 .4vw #8BFDFE, .5vw .5vw .1vw #147280;
+        color: #28D7FE;
+    }
+
+    50% {
+        text-shadow: 0 0 .5vw #082180, 0 0 1.5vw #082180, 0 0 5vw #082180, 0 0 5vw #082180, 0 0 .2vw #082180, .5vw .5vw .1vw #0A3940;
+        color: #146C80;
+    }
+}
+
+
+a:link {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #fff;
+    text-decoration: underline;
+}

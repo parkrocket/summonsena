@@ -5,6 +5,14 @@
     font-style: normal;
 }
 
+
+@font-face {
+    font-family: 'ONE-Mobile-POP';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/ONE-Mobile-POP.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body{ width:100%; font-family: 'twayair'}
 
 #wrap {max-width: 1200px; margin:0 auto; padding:20px 10px; position:relative; background-color: #fff; }
@@ -21,7 +29,7 @@ body{ width:100%; font-family: 'twayair'}
     
 }
 
-#right_dv { width:500px; background: black; width:50%; color:#fff;  padding: 15px;border-radius: 5px; text-align: right;}
+#right_dv { width:500px; background: #222; width:50%; color:#fff;  padding: 15px;border-radius: 5px; text-align: right; box-shadow: 5px 5px 5px black;}
 #right_dv > h3 {text-align: left;}
 
 #issue_wrap {background-color: #eee; padding:10px; border-radius:5px;}

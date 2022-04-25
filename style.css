@@ -32,7 +32,7 @@ body{ width:100%; font-family: 'twayair'}
 #right_dv { width:500px; background: #222; width:50%; color:#fff;  padding: 15px;border-radius: 5px; text-align: right; box-shadow: 5px 5px 5px black;}
 #right_dv > h3 {text-align: left;}
 
-#issue_wrap {background-color: #eee; padding:10px; border-radius:5px;}
+#issue_wrap {background-color: #eee; padding:10px; border-radius:5px; border:1px solid #ddd;}
 
 .btns{ display: inline-block; width:auto;}
 
@@ -41,6 +41,9 @@ body{ width:100%; font-family: 'twayair'}
 .fa-times {color:red}
 .fa-check {color:#2DB400}
 
+
+#uid {width:80%;
+display:inline-block}
 
 .neonText {
 color: #fff;
@@ -130,3 +133,30 @@ a:hover {
     color: #fff;
     text-decoration: underline;
 }
+
+
+@media screen and (max-width: 768px) {
+    #top_wrap {
+        display: block;
+    }
+
+    #right_dv {
+        width:100%;
+       
+    }
+
+    #uid {
+        width:70%;
+    }
+
+    #left_dv {
+        width: 100%;
+        padding:0px;
+        margin-bottom:10px;
+    }
+
+    #table_wrap {
+        padding: 20px;
+    }
+}
+

@@ -17,6 +17,7 @@
     </script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
     <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
@@ -31,7 +32,7 @@
         <div id="top_wrap">
             <div id="left_dv">
                 <p>회원번호를 입력하세요.<a href="https://forum.netmarble.com/sk2/view/13/746266" target="_blank" rel="noopener noreferrer" style="float:right; color:#222">회원번호란?</a></p>
-                <p><input type="text" id="uid" style="width:84%;display:inline-block" class="form-control" ><button onclick="req();"  class="form-control btns">입력완료</button></p>
+                <p><input type="text" id="uid" style="" class="form-control" ><button onclick="req();"  class="form-control btns">입력완료</button></p>
                 <p style="text-align: right;"></p>
                 <div id="issue_wrap">
                     <h3>Issue</h3>
@@ -39,7 +40,7 @@
                     <p style="font-size:11px; color:#5a5a5a; line-height: -20px; ">※ 쿠폰번호는 상시 업데이트중입니다.</p>
                 </div>
             </div>
-            <div id="right_dv">
+            <div id="right_dv" onclick="popup();">
                 <h3>세븐나이츠2 Summon 길드</h3>
                 <h3>길드원 절찬 대모집중!</h3>
                 <p class="neonText">1. 팀투 33만이상</p>
@@ -71,6 +72,9 @@
    
 
     <script>
+        function popup(){
+            window.open("https://open.kakao.com/o/gdfTMBMc​​​​​​​");
+        }
         function setCookie(cookie_name, value, days) {
             var exdate = new Date();
             exdate.setDate(exdate.getDate() + days);

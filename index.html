@@ -30,7 +30,7 @@
                 <p style="text-align: right;"></p>
                 <div id="issue_wrap">
                     <h3>Issue</h3>
-                    <p>22/04/26 쿠폰갯수 6개</p>
+                    <p>22/04/26 쿠폰갯수 6개, 보상내역 추가</p>
                     <p style="font-size:11px; color:#5a5a5a; line-height: -20px; ">※ 쿠폰번호는 상시 업데이트중입니다.</p>
                 </div>
             </div>
@@ -50,6 +50,7 @@
                     <tr>
                         <th scope="col">#</th>
                         <th scope="col">쿠폰</th>
+                        <th scope="col">보상내역</th>
                         <th scope="col">상태</th>
                         <th scope="col">응답</th>
                         <th scope="col">자세히</th>
@@ -94,31 +95,17 @@
 
         if (uid) { $('#uid').val(uid) }
         var tabledata = [
-            { id: 1, code: "SENA2JOPD", result: 0, response: '', description: '' },
-            { id: 2, code: "REVIVALRUDY ", result: 0, response: '', description: '' },
-            { id: 3, code: "HAPPYSENA2NIGHT", result: 0, response: '', description: '' },
-            { id: 4, code: "superultrageneral", result: 0, response: '', description: '' },
-            { id: 5, code: "SENA2IDOL", result: 0, response: '', description: '' },
-            { id: 6, code: "HOTHOTEVENT", result: 0, response: '', description: '' },
-            { id: 7, code: "", result: 0, response: '', description: '' },
-            { id: 8, code: "", result: 0, response: '', description: '' },
-            { id: 9, code: "", result: 0, response: '', description: '' },
-            { id: 10, code: "", result: 0, response: '', description: '' },
-            { id: 11, code: "", result: 0, response: '', description: '' },
-            { id: 12, code: "", result: 0, response: '', description: '' },
-            { id: 13, code: "", result: 0, response: '', description: '' },
-            { id: 14, code: "", result: 0, response: '', description: '' },
-            { id: 15, code: "", result: 0, response: '', description: '' },
-            { id: 16, code: "", result: 0, response: '', description: '' },
-            { id: 17, code: "", result: 0, response: '', description: '' },
-            { id: 18, code: "", result: 0, response: '', description: '' },
-            { id: 19, code: "", result: 0, response: '', description: '' },
-            { id: 20, code: "", result: 0, response: '', description: '' },
+            { id: 1, code: "SENA2JOPD", be : "발데르선물(희귀)", result: 0, response: '', description: '' },
+            { id: 2, code: "REVIVALRUDY ", be: "지도1000개", result: 0, response: '', description: '' },
+            { id: 3, code: "HAPPYSENA2NIGHT", be: "발데르선물(전설)", result: 0, response: '', description: '' },
+            { id: 4, code: "superultrageneral", be: "루비500개", result: 0, response: '', description: '' },
+            { id: 5, code: "SENA2IDOL", be: "펫조각상자50개", result: 0, response: '', description: '' },
+            { id: 6, code: "HOTHOTEVENT", be: "토파즈500개", result: 0, response: '', description: '' },
         ];
         let str = "";
 
         for (var a in tabledata) {
-            str += `<tr id="tr_${tabledata[a].id}"><th scope = "row">${tabledata[a].id}</th><td>${tabledata[a].code}</td><td>`;
+            str += `<tr id="tr_${tabledata[a].id}"><th scope = "row">${tabledata[a].id}</th><td>${tabledata[a].code}</td><td>${tabledata[a].be}</td><td>`;
 
              /*   
             if(tabledata[a].result === 0){
@@ -165,7 +152,7 @@
                         }
                         tabledata[i]['response'] = data['resultCode']
 
-                        let str = `<th scope = "row">${tabledata[i].id}</th><td>${tabledata[i].code}</td><td>`;
+                        let str = `<th scope = "row">${tabledata[i].id}</th><td>${tabledata[i].code}</td><td>${tabledata[i].be}</td><td>`;
                         
                         if (tabledata[i].result === 0) {
                             str += `<i class="fas fa-times"></i>`;
